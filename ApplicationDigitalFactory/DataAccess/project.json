@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Entities": "1.0.0-*",
+    "NETStandard.Library": "1.6.1",
+    "Microsoft.EntityFrameworkCore.InMemory": "1.1.1"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

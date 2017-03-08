@@ -1,0 +1,45 @@
+﻿<h1>{{titulo}}</h1>
+<h1>People Details :</h1>
+<p *ngIf="!peoples"><em>Loading people Details please Wait ! ...</em></p>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="Name">Name</label>
+        <input #Name type="text" class="form-control" id="Name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="Region">Region</label>
+        <input #Region type="text" class="form-control" id="Region" placeholder="Region">
+    </div>
+    <button (click)="getTotalAmount(Name.value, Region.value)" type="button" class="btn btn-primary">Buscar</button>
+</form>
+<div class="container">
+    <h2>Usted tiene: <span class="label label-success">$ {{ totalAmount }} USD</span></h2>
+</div>
+
+<table class="table table-hover" *ngIf="peoples">
+
+    <tr>
+        <th>People ID</th>
+        <th>Name</th>
+        <th>Region</th>
+        <th>Amount</th>
+    </tr>
+    <tbody *ngFor="let item  of peoples">
+        <tr>
+            <td>
+                {{item.id}}
+            </td>
+            <td>
+                {{item.name}}
+            </td>
+
+            <td>
+                {{item.region}}
+            </td>
+
+            <td>
+                {{item.amount}}
+            </td>
+        </tr>
+    </tbody>
+</table> 
