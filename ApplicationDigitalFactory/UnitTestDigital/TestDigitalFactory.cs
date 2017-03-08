@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using ApplicationDigitalFactory.Controllers;
+using DataAccess;
 using Entities;
 using Microsoft.EntityFrameworkCore;
-using Model;
 using NUnit.Framework;
 namespace UnitTestDigital
 {

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Entities;
+﻿using Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Model
+namespace DataAccess
 {
     public class DigitalFactoryMemoryContext: DbContext
     {

@@ -1,7 +1,7 @@
 ﻿namespace Entities
 {
     /// <summary>
-    /// Clase POCO que permite almacenar información del la personas 
+    /// Class POCO for People
     /// </summary>
     public class People
     {

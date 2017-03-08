@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Entities;
 
-namespace Model
+namespace DataAccess
 {
+    /// <summary>
+    /// Model to Entity People
+    /// </summary>
     public class PeopleModel : IRepository<People>
     {
         private readonly DigitalFactoryMemoryContext _contextDb;

@@ -3,6 +3,9 @@ using Entities;
 
 namespace Facade
 {
+    /// <summary>
+    /// Interface to People
+    /// </summary>
     public interface IFacadePeople
     {
         IEnumerable<People> GetAll();

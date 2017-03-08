@@ -13,7 +13,7 @@ export class PeopleComponent {
         http.get('/api/People/People').subscribe(result => {
             this.peoples = result.json();
         });
-        this.titulo = 'Consulta Personas -  Digital Factory';
+        this.titulo = 'Find in People -  Digital Factory';
     }
     public getTotalAmount(name: string, region: string) {
         let params = new URLSearchParams();

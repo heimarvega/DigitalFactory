@@ -10,10 +10,10 @@
         <label class="sr-only" for="Region">Region</label>
         <input #Region type="text" class="form-control" id="Region" placeholder="Region">
     </div>
-    <button (click)="getTotalAmount(Name.value, Region.value)" type="button" class="btn btn-primary">Buscar</button>
+    <button (click)="getTotalAmount(Name.value, Region.value)" type="button" class="btn btn-primary">Search</button>
 </form>
 <div class="container">
-    <h2>Usted tiene: <span class="label label-success">$ {{ totalAmount }} USD</span></h2>
+    <h2>You have: <span class="label label-success">$ {{ totalAmount }} USD</span></h2>
 </div>
 
 <table class="table table-hover" *ngIf="peoples">
