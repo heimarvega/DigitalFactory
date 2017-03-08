@@ -12,13 +12,11 @@ namespace ApplicationDigitalFactory.Controllers
     [Route("api/[controller]")]
     public class PeopleController : Controller
     {
-        private readonly IRepository<People> _peopleRepositorio;
         private readonly IFacadePeople _facadePeople;
 
         public PeopleController(IRepository<People> repository)
         {
             _facadePeople = new FacadePeople(repository);
-            _peopleRepositorio = repository;
         }
         // GET: api/values
         [HttpGet]
